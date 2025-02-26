@@ -1,4 +1,5 @@
 import streamlit as st
+st.page_link("streamlit_app.py", label="Home")
 st.markdown("""
 <style>
 .big-font {

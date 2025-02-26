@@ -8,31 +8,18 @@ st.markdown("""
         decoration.innerText = "BioImmigration";
         display: block;
         text-align: left;
-        font-size: 20px;
+        font-size: 16px;
 	}
-    button {
-    height: 50px;
-    width: 200px;
-    color: blue;
 }
 </style>""",
 unsafe_allow_html=True)
 
-st.markdown("""
-<style>
 
-    button {
-    height: 50px;
-    width: 200px;
-    color: blue;
-}
-</style>""",
-unsafe_allow_html=True)
 col1, col2 = st.columns(2)
 with col1:
-    st.link_button("PDF is not in the database", "pages/New_User.py")
+    st.page_link("pages/New_User.py", label = "PDF not in Database")
 
 with col2:
-    st.link_button("PDF in Database","pages/Returning_Flyer.py")
-#st.link_button("Go to gallery", "https://streamlit.io/gallery")
+    st.page_link("pages/Returning_Flyer.py", label = "PDF in Database")
+
 
